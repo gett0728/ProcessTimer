@@ -1,6 +1,6 @@
 import time
 
-def getPerformanceTime(func, *args, **kwargs):
+def get_performance_time(func, *args, **kwargs):
     # Measure the processing time of the function.
     start = time.perf_counter()
     func(*args, **kwargs) 
@@ -10,7 +10,7 @@ def getPerformanceTime(func, *args, **kwargs):
     print(f"一つ目の関数の処理時間: {elapsed_time:.7f} 秒") 
 
 
-def getPerformanceRelativeTime(func1, func2, *args, **kwargs):
+def get_performance_relative_time(func1, func2, *args, **kwargs):
     # Measure the processing time of the first function.
     start = time.perf_counter()
     func1(*args, **kwargs) 
